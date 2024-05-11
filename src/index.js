@@ -2,6 +2,10 @@ import { ActionManager, ArcRotateCamera, Color3, Engine, ExecuteCodeAction, Free
     from "@babylonjs/core";
 import { Inspector } from '@babylonjs/inspector';
 
+
+// Import personnalise
+import Personnage from "./Personnage";
+
 let engine;
 let canvas;
 
@@ -71,6 +75,7 @@ var createScene = function () {
 
     let ground = MeshBuilder.CreateGround("ground", { width: 50, height: 50 }, scene);
 
+    /*
     //vitesse du zoom molette
     camera.wheelPrecision = 10;
 
@@ -180,6 +185,9 @@ var createScene = function () {
 
 
     loadModel();
+    */
+
+    let player = new Personnage(scene, camera, 0.03, 0.1);
 
 
 
