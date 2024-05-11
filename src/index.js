@@ -1,5 +1,6 @@
 import { Color3, Engine, FreeCamera, HemisphericLight, MeshBuilder, Scene, StandardMaterial, Vector3 }
     from "@babylonjs/core";
+import { Inspector } from '@babylonjs/inspector';
 
 let engine;
 let canvas;
@@ -8,6 +9,8 @@ window.onload = () => {
     canvas = document.getElementById("renderCanvas");
     engine = new Engine(canvas, true);
     const scene = createScene();
+
+    Inspector.Show(scene, {});
 
     engine.runRenderLoop(function () {
         scene.render();
