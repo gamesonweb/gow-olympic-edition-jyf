@@ -3,7 +3,8 @@ Projet babylon js
 
 ## Participants 
 Jonathan Vermot-Gauchy
-
+Yasser Louafi
+Fadwa Bouhadi
 
 ## Description du jeu 
 ### Epreuves
